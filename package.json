@@ -4,12 +4,17 @@
   "description": "Test Cases about the web application",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run"
+    "generate:html-report": "marge cypress/reports/mochawesome.json --reportDir cypress/reports"
   },
   "author": "Mr Bones",
   "license": "ISC",
   "page": "https://testing1.geekqa.net/",
+  "repository": "https://github.com/Hotbones/Ejemplo-usando-Chatgpt.git",
   "dependencies": {
     "cypress": "^13.1.0"
+  },
+  "devDependencies": {
+    "marge": "^1.0.1",
+    "mochawesome": "^7.1.3"
   }
 }
