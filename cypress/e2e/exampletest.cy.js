@@ -40,6 +40,8 @@ describe('Prueba Happy Path', () => {
             cy.get('#name').type('John Doe');
       cy.get('#name').should('have.value', 'John Doe');
       cy.get('#email').type('correo_invalido');
+      cy.get('#address').type('dir_invalida');
+      cy.get('#phone').type('telefono invalido')
 
 
 
